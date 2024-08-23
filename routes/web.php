@@ -21,3 +21,7 @@ Route::get('/', function () {
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
 Route::get('/account/register',[AccountController::class, 'registration'])->name('account.registration');
+
+Route::get('/getpost', function () {
+    return view('welcome');
+});
